@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>問合せフォーム</title>
+    <link rel="stylesheet" href="form.css" type="text/css">
 </head>
 <body>
-    
+    <div class="Form">
+        <h1>Lognos(AccessMill/millBoard)<br>問合せフォーム</h1>
+        <p>こちらのフォームで回答された内容は、メールにて自動送信されます。
+        <br>回答後の詳細連絡はメールにて行います。
+        <br>予めご了承ください。
+        </p>
+        <div class="Form-Item">
+          <p class="Form-Item-Label">
+            <span class="Form-Item-Label-Required">必須</span>タイトル
+          </p>
+          <input type="text" class="Form-Item-Input" placeholder="例）AIRsとうまく連携がされていない">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>希望対応期日</p>
+          <input type="text" class="Form-Item-Input" placeholder="日付を入力してください(YYYY/MM/DD)">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>問合せ者氏名</p>
+          <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>問合せ者部署</p>
+          <input type="text" class="Form-Item-Input" placeholder="例）グローバルテクノロジー本部">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label">追加したいccメールアドレス</p>
+          <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+        </div>
+        <div class="Form-Item">
+          <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+          <textarea class="Form-Item-Textarea"></textarea>
+        </div>
+        <input type="submit" class="Form-Btn" value="送信する">
+      </div>
 </body>
 </html>
